@@ -35,6 +35,19 @@ html {
   scroll-behavior: smooth;
 }
 
+
+header nav {
+  position: fixed;
+  top: 0;
+  background-color: var(--light-one);
+  z-index: 50;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+
 body,
 button,
 input,
