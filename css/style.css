@@ -39,7 +39,7 @@ html {
 header nav {
   position: fixed;
   top: 0;
-  background-color: var(--light-one);
+  background-color: var(--dark-one);
   z-index: 50;
 }
 
@@ -254,7 +254,7 @@ nav .container {
 .links a {
   display: inline-block;
   padding: 0.9rem 1.2rem;
-  color: var(--dark-one);
+  color: var(--light-one);
   font-size: 1.05rem;
   text-transform: uppercase;
   font-weight: 500;
@@ -628,6 +628,13 @@ nav .container {
   font-size: 1rem;
 }
 
+.parra {
+  margin: 0.5rem 0 1.5rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;
+}
+
 .blog-text {
   margin: 0.5rem 0 1.5rem 0;
   font-size: 1.2rem;
@@ -651,12 +658,17 @@ nav .container {
 
 /* Sección acerca de */
 
+.about ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 .about {
   overflow: hidden;
 }
 
 .about img {
-  max-width: 600px;
+  max-width: 120px;
 }
 
 .about .text {
@@ -677,40 +689,10 @@ nav .container {
   margin-bottom: 0.3rem;
 }
 
-.skill-bar {
-  width: 70%;
-  height: 8px;
-  border-radius: 4px;
-  background-color: #ece6fa;
-  position: relative;
-  overflow: hidden;
-}
-
-.skill-progress {
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: 0;
-  background-color: var(--main-color);
-  transition: 1s;
-}
-
 .about .column-1 {
   position: relative;
 }
 
-.about .column-1:before {
-  content: "About";
-  position: absolute;
-  font-size: 8rem;
-  font-weight: 800;
-  color: var(--main-color);
-  opacity: 0.04;
-  top: 20px;
-  left: 0;
-  line-height: 0;
-}
 
 /* Fin Sección acerca de */
 
@@ -738,7 +720,7 @@ nav .container {
   width: 100%;
   background-color: var(--light-one);
   width: 100%;
-  border-radius: 45px;
+  border-radius: 65px;
   padding: 5.5rem 4.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -932,7 +914,7 @@ nav .container {
 }
 
 .input-arrow:hover {
-  background-color: #6b44e0;
+  background-color: var(--secondary-color);
 }
 
 .focus {
@@ -984,7 +966,7 @@ nav .container {
 
 .social-media a {
   color: #7b7b7b;
-  font-size: 1.3rem;
+  font-size: 2.3rem;
   margin-right: 0.4rem;
   transition: 0.3s;
 }
@@ -1015,7 +997,7 @@ nav .container {
 }
 
 .back-btn:hover {
-  background-color: #6b44e0;
+  background-color: var(--secondary-color);
 }
 
 .back-btn-wrap:before {
